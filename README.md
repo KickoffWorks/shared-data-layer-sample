@@ -4,6 +4,8 @@ NOTE: This package is configured to use Postgres, but other changes might be req
 
 Include this package as a dependency to your projects in order to use the repository class, migrations and the context itself.
 
+This solves the issue of having multiple projects that either need the same entities/context throughout and this includes migrations, to keep your database schema up to date. Bulk data can also be inserted.
+
 ### IMPORTANT PARAMETERS / CHANGES YOU NEED
 
 Make sure to remove any appsettings / credentials if you're going to use this as a public package. If you're planning on keeping it as a private package for yourself or your organization, you can maybe use a key vault for the connection strings.
