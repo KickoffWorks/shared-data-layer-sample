@@ -40,7 +40,7 @@ In our Sample.Api example I simply added the local Sample.Data project as a depe
 
 - add the nuget.config to the root of your repository/solution, edit it with your personal access token to read packages, change the name of the github package registry to your username/organization name, and your username
 - add <PackageReference Include="Sample.Data" Version="1.0.0" /> to your .csproj file
-- edit the github actions workflow file @.github/workflows/nuget-package-deploy - rename it to nuget-package-deploy.yml in order for Github to consider it as an Action Workflow.
+- edit the github actions workflow file @.github/workflows/nuget-package-deploy - rename it to nuget-package-deploy.yml in order for Github to consider it as an Action Workflow
 
 ### Editing your NuGet package
 
