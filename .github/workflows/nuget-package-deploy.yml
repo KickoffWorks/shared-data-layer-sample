@@ -27,7 +27,7 @@ jobs:
         - run: dotnet build Sample.Data
         
         - name: Create the package
-          run: dotnet pack --configuration Release Photolink.Data
+          run: dotnet pack --configuration Release Sample.Data
           
         - name: Publish the package to GPR
           env:
