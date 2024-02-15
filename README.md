@@ -32,7 +32,7 @@ You should then be able to connect via Azure Data Studio or Data Grip or even th
 
 In our Sample.Api example I simply added the local Sample.Data project as a dependency, in separate repositories you need:
 
-- nuget.config for the credentials to your NuGet package registry and for your project to recognize the missing package (I included one as example under Sample.Api directory)
+- nuget.config for the credentials to your NuGet package registry and for your project to recognize the missing package (I included one as example in the root directory, but without the .config extension, make sure to replace the _ to .)
 - add package reference to your project
 - CI/CD pipeline to build the Sample.Data project, pack it and deploy the package to the Github Package Registry OR run dotnet pack command
 
