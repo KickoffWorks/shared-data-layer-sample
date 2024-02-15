@@ -6,6 +6,8 @@ Include this package as a dependency to your projects in order to use the reposi
 
 This solves the issue of having multiple projects that either need the same entities/context throughout and this includes migrations, to keep your database schema up to date. Bulk data can also be inserted.
 
+Please feel free to contribute by opening a pull request, or sending us a message directly.
+
 ### IMPORTANT PARAMETERS / CHANGES YOU NEED
 
 Make sure to remove any appsettings / credentials if you're going to use this as a public package. If you're planning on keeping it as a private package for yourself or your organization, you can maybe use a key vault for the connection strings.
