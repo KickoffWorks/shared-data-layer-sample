@@ -50,7 +50,9 @@ In our Sample.Api example I simply added the local Sample.Data project as a depe
 
 If in the future you edit your Sample.Data project you need to change the version number in the Sample.Data.csproj file. By adding/editing:
 
+```
 <Version>1.0.0</Version>
+```
 
 #### Commands (for this use case you can remove the optional parameters)
 
