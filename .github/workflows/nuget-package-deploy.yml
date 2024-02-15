@@ -17,9 +17,9 @@ jobs:
         - uses: actions/setup-dotnet@v4
           with:
             dotnet-version: '8.0.x'
-            source-url: https://nuget.pkg.github.com/<YOUR-USERNAME-OR-ORGANIZATION-NAME>/index.json
+            source-url: https://nuget.pkg.github.com/KickoffWorks/index.json
           env:
-            NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}} 
+            NUGET_AUTH_TOKEN: ${{secrets.NUGET_GITHUB_TOKEN}} 
             
             # TEST WITH secrets.GITHUB_TOKEN AS IT IS GENERATED AUTOMATICALLY
             # IF IT DOESN'T WORK CREATE A PERSONAL ACCESS TOKEN AND ADD IT AS A SECRET IN YOUR REPOSITORY, THEN EDIT THE SECRET REFERENCE ABOVE AND BELOW TO ${{secrets.YOUR_SECRET}}
@@ -31,5 +31,5 @@ jobs:
           
         - name: Publish the package to GPR
           env:
-            NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            NUGET_AUTH_TOKEN: ${{secrets.NUGET_GITHUB_TOKEN}}
           run: dotnet nuget push Sample.Data/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN
