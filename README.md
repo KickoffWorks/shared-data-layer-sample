@@ -52,7 +52,7 @@ If in the future you edit your Sample.Data project you need to change the versio
 
 <Version>1.0.0</Version>
 
-#### Commands (for the use case you can remove the optional parameters)
+#### Commands (for this use case you can remove the optional parameters)
 
 If the DbContext class and the class/Service Collection where the DbContext is instantiated are in different class libraries you would need to add to the commands the optional parameters below.
 
